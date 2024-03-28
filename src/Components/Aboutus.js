@@ -4,7 +4,7 @@ function Aboutus() {
     return (
         <div className='aboutus-bg h-[40rem]'>
 
-//Bahi about su for hero section ka code isi me likh de.
+            <div className="p">About section to be done here</div>
 
 
         </div>
