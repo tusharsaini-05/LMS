@@ -41,10 +41,15 @@
   font-family: Josefin+Sans;
   font-weight: 900;
 
-  background: linear-gradient(45deg, #fff, #1B1A55);
+  background: linear-gradient(135deg, #fff, #1B1A55);
   /* Your gradient colors */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.fontJS-subheading {
+  font-family: Josefin+Sans;
+  font-weight: 600;
 }
 
 .roboto {
@@ -52,9 +57,9 @@
 }
 
 .heroBg {
-  background: linear-gradient(-45deg, #9290C3 5%, #1B1A55 20%, #070F2B 100%);
+  background: linear-gradient(-45deg, #1B1A55 5%, #1B1A55 20%, #000 100%);
 }
 
 .aboutus-bg {
-  background: linear-gradient(225deg, #9290C3 5%, #1B1A55 20%, #070F2B 100%);
+  background: linear-gradient(225deg, #1B1A55 5%, #1B1A55 15%, #000 100%);
 }
