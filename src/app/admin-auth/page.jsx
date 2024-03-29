@@ -21,7 +21,7 @@ const AdministratorLogin = () => {
         setPhonenumber('');
         console.log('testf');
 
-        const response = await fetch('http://localhost:4000/administrator/signin', {
+        const response = await fetch('http://localhost:4000/admin/signin', {
             method: "POST",
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify({ email, password, phonenumber })
@@ -29,7 +29,7 @@ const AdministratorLogin = () => {
         const userdata = await response.json()
         if (!response.ok) {
             setIsloading(false)
-            alert("Either the Email or password in incorrect or YOU ARE NOT AN ADMINISTRATOR ❌")
+            alert("Either the Email or password in incorrect or YOU ARE NOT AN ADMIN ❌")
         }
         if (response.ok) {
             localStorage.setItem('user', JSON.stringify(userdata))
@@ -63,7 +63,7 @@ const AdministratorLogin = () => {
                 <div className='flex justify-center items-center '>
 
                     <div className="container  ">
-                        <div className="heading">Login</div>
+                        <div className="heading">Admin Login</div>
                         <form action="" className="form">
                             <input required="" className="input" type="email" name="email" id="email" placeholder="E-mail" onChange={(e) => { setEmail(e.target.value) }} value={email} />
                             <input required="" className="input" type="password" name="password" id="password" placeholder="Password" onChange={(e) => { setPassword(e.target.value) }} value={password} />

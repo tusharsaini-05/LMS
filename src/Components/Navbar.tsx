@@ -22,13 +22,13 @@ const Navbar: React.FC = () => {
         {
             id: 1,
             title: "Administrator",
-            path: "/authmain",
+            path: "/administrator-login",
             cName: "nav-text",
         },
         {
             id: 2,
             title: "Admin",
-            path: "/auth",
+            path: "/admin-auth",
             cName: "nav-text",
         },
         {
