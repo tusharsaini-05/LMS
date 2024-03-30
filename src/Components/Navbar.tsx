@@ -21,19 +21,25 @@ const Navbar: React.FC = () => {
     const NavData: NavItem[] = [
         {
             id: 1,
-            title: "Administrator",
-            path: "/administrator-login",
+            title: "Home",
+            path: "/",
             cName: "nav-text",
         },
         {
             id: 2,
-            title: "Admin",
-            path: "/admin-auth",
+            title: "Administrator Login",
+            path: "/administrator-login",
             cName: "nav-text",
         },
         {
             id: 3,
-            title: "User",
+            title: "Admin Login",
+            path: "/admin-auth",
+            cName: "nav-text",
+        },
+        {
+            id: 4,
+            title: "View Only",
             path: "/view-only",
             cName: "nav-text",
 

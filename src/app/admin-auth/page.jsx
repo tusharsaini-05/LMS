@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 // const router = useRouter();
 import Navbar from '../../Components/Navbar';
+import Aboutus from '@/Components/Aboutus';
+import Footer from '@/Components/Footer';
 
 const AdministratorLogin = () => {
     const [email, setEmail] = useState('')
@@ -60,11 +62,11 @@ const AdministratorLogin = () => {
         <>
             <main id='login ' >
                 <Navbar />
-                <div className='flex justify-center items-center '>
+                <div className='flex justify-center items-center heroBg '>
 
                     <div className="container  ">
                         <div className="heading">Admin Login</div>
-                        <form action="" className="form">
+                        <form action="" className="form flex flex-col">
                             <input required="" className="input" type="email" name="email" id="email" placeholder="E-mail" onChange={(e) => { setEmail(e.target.value) }} value={email} />
                             <input required="" className="input" type="password" name="password" id="password" placeholder="Password" onChange={(e) => { setPassword(e.target.value) }} value={password} />
                             <input required="" className="input" type="tel" name="phone" id="phonenumber" placeholder="Phone Number" onChange={(e) => { setPhonenumber(e.target.value) }} value={phonenumber} />
@@ -77,6 +79,8 @@ const AdministratorLogin = () => {
                     </div>
                 </div>
             </main>
+            <Aboutus />
+            <Footer />
         </>
     )
 }

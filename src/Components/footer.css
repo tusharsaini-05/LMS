@@ -13,8 +13,8 @@ footer {
     width: 100%;
     position: absolute;
 
-    background: linear-gradient(to right, #00093c, #2d0b00);
-    color: #fff;
+    background-color: #000;
+    color: #9290C3;
     padding: 100px 0 30px;
 
     font-size: 13px;
@@ -65,7 +65,7 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #9290C3;
 }
 
 form {
@@ -106,7 +106,7 @@ form button .fasolid {
     line-height: 40px;
     font-size: 20px;
     color: #000;
-    background: #fff;
+    background: #9290C3;
     margin-right: 15px;
     cursor: pointer;
 
@@ -121,6 +121,7 @@ hr {
 
 .copyright {
     text-align: center;
+    color: #fff;
 }
 
 .underline {
@@ -161,11 +162,11 @@ hr {
     }
 
     .col {
-        flex-basis: 100%;
+        flex-basis: 70%;
 
     }
 
-    .col:nth-child(1),
+    .col:nth-child(),
     .col:nth-child(3) {
         flex-basis: 100%;
     }
